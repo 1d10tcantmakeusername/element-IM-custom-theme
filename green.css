@@ -1,0 +1,344 @@
+# This was done mostly by using inspect element to find UI element CSS, copy it, paste it in, edit the colors.
+# Almost everything is green.  If it isn't, it's probably a new feature.  This is version 0.1: the jerry rigged edition.
+
+body {
+    font-family: Inter,Twemoji,Apple Color Emoji,Segoe UI Emoji,Arial,Helvetica,sans-serif,Noto Color Emoji;
+    font-size: 1.5rem;
+    background-color: #009f95 !important;
+    color: #0fe;
+    border: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: #00756d;
+}
+
+.mx_RoomHeader {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50px;
+    flex: 0 0 50px;
+    border-bottom: 1px solid transparent;
+    background-color: #002a27;
+	border-radius: 0px;
+}
+
+.mx_RoomHeader_buttons {
+    background-color: #002a27;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: #00978d;
+}
+
+.mx_RightPanel_headerButton:hover {
+    background: #00847b;
+}
+
+.mx_RoomHeader_button:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    height: 24px;
+    width: 24px;
+    background-color: #009188;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+	border-radius: 0%;
+}
+
+.mx_HeaderButtons:before {
+    content: "";
+    background-color: #009188 !important;
+    opacity: .5;
+    margin: 6px 8px;
+    border-radius: 1px;
+    width: 1px;
+}
+
+.mx_ReplyTile>a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-decoration: none;
+    color: #0fe;
+	border-radius: 0px;
+}
+
+.mx_MatrixChat>:not(.mx_LeftPanel):not(.mx_SpacePanel):not(.mx_ResizeHandle):not(.mx_LeftPanel_wrapper) {
+    background-color: #000b0a;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    min-width: 0;
+    height: 100%;
+}
+
+.mx_SpacePanel {
+    background-color: #001d1b;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.mx_MatrixChat--with-avatar .mx_LeftPanel, .mx_MatrixChat--with-avatar .mx_LeftPanel .mx_LeftPanel_roomListContainer {
+    background-color: #002724;
+}
+
+.mx_MessageTimestamp {
+    color: #00978d;
+    font-size: 1rem;
+    -webkit-font-feature-settings: "tnum";
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+}
+
+.mx_AutoHideScrollbar::-webkit-scrollbar, .mx_AutoHideScrollbar::-webkit-scrollbar-thumb {
+    background-color: #00322f;
+}
+
+.mx_MessageActionBar {
+    position: absolute;
+    visibility: hidden;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 32px;
+    line-height: 2.4rem;
+    border-radius: 8px;
+    background: #003431;
+    border: 1px solid #00423e;
+    top: -32px;
+    right: 8px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 1;
+	color: #0fe;
+}
+
+.mx_EventTile:not([data-layout=bubble]).mx_EventTile_highlight .markdown-body .mx_EventTile_line, .mx_EventTile:not([data-layout=bubble]).mx_EventTile_highlight .mx_EventTile_line {
+    background-color: #00221f;
+}
+
+.mx_EventTile:not([data-layout=bubble]).mx_EventTile_highlight, .mx_EventTile:not([data-layout=bubble]).mx_EventTile_highlight .markdown-body {
+    color: #65aba7;
+}
+
+ {
+	background-color: black;
+}
+
+.mx_EventTile:not([data-layout=bubble]):hover.mx_EventTile_verified .mx_EventTile_line {
+    border-left: 4px solid hsl(176, 48%, 64%);
+	background-color: #003d39;
+	border-radius: 0px;
+}
+
+.mx_EventTile:not([data-layout=bubble]).mx_EventTile.focus-visible:focus-within .mx_EventTile_line, .mx_EventTile:not([data-layout=bubble]).mx_EventTile.mx_EventTile_actionBarFocused .mx_EventTile_line, .mx_EventTile:not([data-layout=bubble]).mx_EventTile:hover .mx_EventTile_line {
+    background-color: #003d39;
+	border-radius: 0px;
+}
+
+.mx_EventTile:not([data-layout=bubble]).mx_EventTile_selected>.mx_EventTile_line {
+    border-left: 4px solid #00756d;
+    padding-left: 60px;
+    background-color: #003d39;
+	border-radius: 0px;
+}
+
+.mx_EventTile_content .markdown-body code, .mx_EventTile_content .markdown-body pre {
+    font-family: Inconsolata,Twemoji,Apple Color Emoji,Segoe UI Emoji,Courier,monospace,Noto Color Emoji!important;
+    background-color: #003531;
+}
+
+.mx_MessageComposer_sendMessage {
+    cursor: pointer;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 0%;
+    background-color: #009188;
+}
+
+.mx_MessageComposer_button:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    height: 20px;
+    width: 20px;
+    background-color: #00978d;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+.mx_RightPanel_headerButton:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    height: 24px;
+    width: 24px;
+    background-color: #00756d;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+
+.mx_RoomHeader_name {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    overflow: hidden;
+    color: #0fe;
+    font-weight: 600;
+    font-size: 1.8rem;
+    border-radius: 0px;
+    margin: 0 7px;
+    padding: 1px 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.mx_ReplyPreview {
+    background: #001514;
+    border: 1px solid transparent;
+    border-bottom: none;
+    border-radius: 0px 0px 0 0;
+    max-height: 50vh;
+    overflow: auto;
+    -webkit-box-shadow: 0 -16px 32px rgb(0 0 0 / 28%);
+    box-shadow: 0 -16px 32px rgb(0 0 0 / 28%);
+}
+
+hr.mx_RoomView_myReadMarker {
+    border-top: 2px solid #00504a;
+    border-bottom: 1px solid #002b28;
+    margin-top: 0;
+    position: relative;
+    top: -1px;
+    z-index: 1;
+    will-change: width;
+    -webkit-transition: width easeinsine .4s 1s,opacity easeinsine .4s 1s;
+    transition: width easeinsine .4s 1s,opacity easeinsine .4s 1s;
+    width: 99%;
+    opacity: 1;
+	border-radius: 0px;
+}
+
+.mx_Username_color1, .mx_Username_color2, .mx_Username_color3, .mx_Username_color4, .mx_Username_color5, .mx_Username_color6, .mx_Username_color7, .mx_Username_color8 {
+    color: #00877e;
+}
+
+.mx_ReplyChain.mx_ReplyChain_color1, .mx_ReplyChain.mx_ReplyChain_color2, .mx_ReplyChain.mx_ReplyChain_color3, .mx_ReplyChain.mx_ReplyChain_color4, .mx_ReplyChain.mx_ReplyChain_color5, .mx_ReplyChain.mx_ReplyChain_color6, .mx_ReplyChain.mx_ReplyChain_color7, .mx_ReplyChain.mx_ReplyChain_color8 {
+    border-left-color: #00877e;
+	border-radius: 0px;
+}
+
+.mx_EventTile:not([data-layout=bubble]).mx_EventTile_isEditing {
+    background-color: #002c29;
+}
+
+.mx_EditMessageComposer .mx_EditMessageComposer_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: absolute;
+    left: 0;
+    background: #003531;
+    z-index: 100;
+    right: 0;
+    margin: 0 -110px 0 0;
+    padding: 5px 147px 5px 5px;
+}
+
+.mx_AccessibleButton_kind_secondary {
+    color: #24a29a;
+    font-weight: 600;
+}
+
+
+.mx_AccessibleButton_kind_primary {
+    color: #0fe;
+    background-color: #001210;
+    border: 1px solid #00a095;
+    font-weight: 600;
+	border-radius: 0px;
+}
+
+.mx_EditMessageComposer .mx_BasicMessageComposer_input {
+    border-radius: 0px;
+    border: 1px solid transparent;
+    background-color: #1e3c3a;
+    max-height: 200px;
+    padding: 3px 6px;
+}
+
+.mx_EventTile_content .markdown-body code, .mx_EventTile_content .markdown-body pre {
+    font-family: unifont!important;
+    background-color: #003531;
+	border-radius: 0;
+}
+
+.mx_EventTile:not([data-layout=bubble]).mx_EventTile_highlight .markdown-body .mx_EventTile_line, .mx_EventTile:not([data-layout=bubble]).mx_EventTile_highlight .mx_EventTile_line {
+    background-color: #002320;
+	border-radius: 0;
+}
+
+.mx_EventTile_content .markdown-body a.mx_UserPill, .mx_UserPill {
+    color: #002422;
+    background-color: #00c3b6;
+	border-radius: 0;
+}
+
+.mx_LeftPanel_outerWrapper {
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 15%;
+    position: relative;
+    contain: layout paint;
+}
