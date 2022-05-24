@@ -448,12 +448,6 @@ a:hover, a:link, a:visited {
 }
 
 .mx_RoomHeader_button {
-    position: relative;
-    margin-left: 1px;
-    margin-right: 1px;
-    cursor: pointer;
-    height: 32px;
-    width: 32px;
     border-radius: 0%;
 }
 
@@ -466,15 +460,6 @@ a:hover, a:link, a:visited {
 }
 
 .mx_RightPanel_headerButton {
-    cursor: pointer;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    margin-left: 1px;
-    margin-right: 1px;
-    height: 32px;
-    width: 32px;
-    position: relative;
     border-radius: 0%;
 }
 
@@ -488,4 +473,108 @@ a:hover, a:link, a:visited {
 
 .mx_EventTile_content .mx_EventTile_edited, .mx_EventTile_content .mx_EventTile_pendingModeration {
     color: #00ffee8a;
+}
+
+.mx_DateSeparator {
+    color: #0fe;
+}
+
+.mx_DateSeparator>hr {
+    border-bottom: 1px solid #0fe;
+}
+
+.mx_EventTile .mx_EventTile_receiptSending:before, .mx_EventTile .mx_EventTile_receiptSent:before {
+    background-color: #0fe;
+}
+
+.mx_Tooltip {
+    border-radius: 0px;
+    word-break: break-word;
+    background-color: #002320;
+    color: #0fe;
+}
+
+.mx_ReactionsRow {
+    color: #0fe;
+}
+
+.mx_ReactionsRowButton {
+    margin-right: 2px;
+    padding: 1px 2px;
+    border: 1px solid #00433f;
+    border-radius: 0px;
+    background-color: #00413ca8;
+}
+
+.mx_ReactionsRowButton:hover {
+    border-color: #00998f;
+}
+
+.mx_ReactionsRow .mx_ReactionsRow_addReactionButton:before {
+    background-color: #007069;
+}
+
+.mx_ReactionsRowButton.mx_ReactionsRowButton_selected {
+    background-color: #00bcaf70;
+    border-color: #0fe;
+}
+
+.mx_SpacePanel .mx_SpaceButton.mx_SpaceButton_active.mx_SpaceButton_narrow .mx_SpaceButton_selectionWrapper {
+    padding: 3px;
+    border: 1px solid #0fe;
+	border-radius: 0px;
+}
+
+.mx_SpacePanel .mx_SpaceTreeLevel .mx_BaseAvatar:not(.mx_UserMenu_userAvatar_BaseAvatar) .mx_BaseAvatar_initial {
+    color: #0fe;
+    border-radius: 0px;
+    background-color: #00504b8a;
+}
+
+.mx_SpacePanel .mx_SpaceButton .mx_SpaceButton_toggleCollapse {
+    background-color: #0fe;
+}
+
+.mx_SpacePanel .mx_SpaceButton.mx_SpaceButton_favourites .mx_SpaceButton_icon, .mx_SpacePanel .mx_SpaceButton.mx_SpaceButton_home .mx_SpaceButton_icon, .mx_SpacePanel .mx_SpaceButton.mx_SpaceButton_orphans .mx_SpaceButton_icon, .mx_SpacePanel .mx_SpaceButton.mx_SpaceButton_people .mx_SpaceButton_icon {
+    background-color: #00504b8a;
+}
+
+.mx_SpacePanel .mx_SpaceButton .mx_SpaceButton_icon {
+    border-radius: 0px;
+}
+
+.mx_SpacePanel .mx_SpacePanel_badgeContainer .mx_NotificationBadge_2char, .mx_SpacePanel .mx_SpacePanel_badgeContainer .mx_NotificationBadge_3char {
+    margin: -3px -3px 0 0;
+    border: 1px solid #00726a;
+	border-radius: 0px;
+}
+
+.mx_NotificationBadge.mx_NotificationBadge_visible {
+    background-color: #00756d;
+}
+
+.mx_NotificationBadge.mx_NotificationBadge_visible .mx_NotificationBadge_count {
+    color: #0fe;
+}
+
+mx_SpacePanel .mx_SpaceButton.mx_SpaceButton_favourites .mx_SpaceButton_icon:before, .mx_SpacePanel .mx_SpaceButton.mx_SpaceButton_home .mx_SpaceButton_icon:before, .mx_SpacePanel .mx_SpaceButton.mx_SpaceButton_orphans .mx_SpaceButton_icon:before, .mx_SpacePanel .mx_SpaceButton.mx_SpaceButton_people .mx_SpaceButton_icon:before {
+    background-color: #0fe;
+}
+
+.mx_SpacePanel .mx_SpaceButton {
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: #0fe;
+}
+
+.mx_SpacePanel .mx_SpaceButton .mx_SpaceButton_selectionWrapper {
+    border-radius: 0px;
+	padding: 0px;
+}
+
+.mx_SpacePanel .mx_SpaceButton.mx_SpaceButton_new .mx_SpaceButton_icon:before {
+    background-color: #0fe;
 }
