@@ -1,12 +1,6 @@
 body {
-    font-family: Inter,Twemoji,Apple Color Emoji,Segoe UI Emoji,Arial,Helvetica,sans-serif,Noto Color Emoji;
-    font-size: 1.5rem;
     background-color: #009f95 !important;
     color: #0fe;
-    border: 0;
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -15,10 +9,6 @@ body {
 }
 
 .mx_RoomHeader {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50px;
-    flex: 0 0 50px;
-    border-bottom: 1px solid transparent;
     background-color: #002a27;
 	border-radius: 0px;
 }
@@ -37,67 +27,29 @@ body {
 }
 
 .mx_RoomHeader_button:before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    height: 24px;
-    width: 24px;
     background-color: #009188;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-    mask-size: contain;
 	border-radius: 0%;
 }
 
 .mx_HeaderButtons:before {
-    content: "";
     background-color: #009188 !important;
     opacity: .5;
-    margin: 6px 8px;
-    border-radius: 1px;
+    border-radius: 0px;
     width: 1px;
 }
 
 .mx_ReplyTile>a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-decoration: none;
     color: #0fe;
 	border-radius: 0px;
 }
 
 .mx_MatrixChat>:not(.mx_LeftPanel):not(.mx_SpacePanel):not(.mx_ResizeHandle):not(.mx_LeftPanel_wrapper) {
     background-color: #000b0a;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 0px;
-    flex: 1 1 0;
-    min-width: 0;
-    height: 100%;
 }
 
 .mx_SpacePanel {
     background-color: #001d1b;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
     padding: 0;
-    margin: 0;
-    position: relative;
-    z-index: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
 }
 
 .mx_MatrixChat--with-avatar .mx_LeftPanel, .mx_MatrixChat--with-avatar .mx_LeftPanel .mx_LeftPanel_roomListContainer {
@@ -106,10 +58,6 @@ body {
 
 .mx_MessageTimestamp {
     color: #00978d;
-    font-size: 1rem;
-    -webkit-font-feature-settings: "tnum";
-    font-feature-settings: "tnum";
-    font-variant-numeric: tabular-nums;
 }
 
 .mx_AutoHideScrollbar::-webkit-scrollbar, .mx_AutoHideScrollbar::-webkit-scrollbar-thumb {
@@ -117,24 +65,9 @@ body {
 }
 
 .mx_MessageActionBar {
-    position: absolute;
-    visibility: hidden;
-    cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 32px;
-    line-height: 2.4rem;
-    border-radius: 8px;
+    border-radius: 0px;
     background: #003431;
     border: 1px solid #00423e;
-    top: -32px;
-    right: 8px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    z-index: 1;
 	color: #0fe;
 }
 
@@ -179,83 +112,32 @@ body {
     width: 32px;
     height: 32px;
     border-radius: 0%;
-    background-color: #009188;
+    background-color: #004844;
 }
 
 .mx_MessageComposer_button:before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    height: 20px;
-    width: 20px;
     background-color: #00978d;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    -webkit-mask-position: center;
-    mask-position: center;
 }
 
 .mx_RightPanel_headerButton:before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    height: 24px;
-    width: 24px;
     background-color: #00756d;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-    mask-size: contain;
 }
 
 
 .mx_RoomHeader_name {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    overflow: hidden;
     color: #0fe;
-    font-weight: 600;
-    font-size: 1.8rem;
     border-radius: 0px;
-    margin: 0 7px;
-    padding: 1px 4px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 .mx_ReplyPreview {
     background: #001514;
     border: 1px solid transparent;
-    border-bottom: none;
     border-radius: 0px 0px 0 0;
-    max-height: 50vh;
-    overflow: auto;
-    -webkit-box-shadow: 0 -16px 32px rgb(0 0 0 / 28%);
-    box-shadow: 0 -16px 32px rgb(0 0 0 / 28%);
 }
 
 hr.mx_RoomView_myReadMarker {
     border-top: 2px solid #00504a;
     border-bottom: 1px solid #002b28;
-    margin-top: 0;
-    position: relative;
-    top: -1px;
-    z-index: 1;
-    will-change: width;
-    -webkit-transition: width easeinsine .4s 1s,opacity easeinsine .4s 1s;
-    transition: width easeinsine .4s 1s,opacity easeinsine .4s 1s;
-    width: 99%;
-    opacity: 1;
 	border-radius: 0px;
 }
 
@@ -279,7 +161,6 @@ hr.mx_RoomView_myReadMarker {
 
 .mx_AccessibleButton_kind_secondary {
     color: #24a29a;
-    font-weight: 600;
 }
 
 
@@ -287,16 +168,12 @@ hr.mx_RoomView_myReadMarker {
     color: #0fe;
     background-color: #001210;
     border: 1px solid #00a095;
-    font-weight: 600;
 	border-radius: 0px;
 }
 
 .mx_EditMessageComposer .mx_BasicMessageComposer_input {
     border-radius: 0px;
-    border: 1px solid transparent;
     background-color: #1e3c3a;
-    max-height: 200px;
-    padding: 3px 6px;
 }
 
 .mx_EventTile_content .markdown-body code, .mx_EventTile_content .markdown-body pre {
@@ -316,79 +193,32 @@ hr.mx_RoomView_myReadMarker {
 	border-radius: 0;
 }
 
-.mx_LeftPanel_outerWrapper {
-    -webkit-box-orient: vertical;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    max-width: 15%;
-    position: relative;
-    contain: layout paint;
-}
-
 .mx_MediaBody {
     background-color: #003733;
     border-radius: 0px;
-    max-width: 243px;
     color: #00b2a6;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
-    padding: 6px 12px;
 }
 
 .mx_PlayPauseButton {
-    position: relative;
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-    min-height: 32px;
     border-radius: 0px;
     background-color: #001917;
 }
 
 .mx_PlayPauseButton:before {
-    content: "";
-    position: absolute;
     background-color: #00766f;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-    mask-size: contain;
 }
 
 .mx_MediaBody.mx_AudioPlayer_container .mx_AudioPlayer_primaryContainer .mx_AudioPlayer_mediaInfo .mx_AudioPlayer_mediaName {
     color: #0fe;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    padding-bottom: 4px;
 }
 
 .mx_SeekBar {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 100%;
-    height: 1px;
     background: #000e0d;
     outline: #00ffee;
-    position: relative;
-    cursor: pointer;
 }
 
 .mx_SeekBar:before {
-    content: "";
     background-color: #009b91;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-    -webkit-transform: scaleX(var(--fillTo));
-    transform: scaleX(var(--fillTo));
 }
 
 input[type="range" i] {
@@ -489,7 +319,6 @@ a:hover, a:link, a:visited {
 
 .mx_Tooltip {
     border-radius: 0px;
-    word-break: break-word;
     background-color: #002320;
     color: #0fe;
 }
@@ -499,8 +328,6 @@ a:hover, a:link, a:visited {
 }
 
 .mx_ReactionsRowButton {
-    margin-right: 2px;
-    padding: 1px 2px;
     border: 1px solid #00433f;
     border-radius: 0px;
     background-color: #00413ca8;
@@ -544,7 +371,6 @@ a:hover, a:link, a:visited {
 }
 
 .mx_SpacePanel .mx_SpacePanel_badgeContainer .mx_NotificationBadge_2char, .mx_SpacePanel .mx_SpacePanel_badgeContainer .mx_NotificationBadge_3char {
-    margin: -3px -3px 0 0;
     border: 1px solid #00726a;
 	border-radius: 0px;
 }
@@ -572,9 +398,15 @@ mx_SpacePanel .mx_SpaceButton.mx_SpaceButton_favourites .mx_SpaceButton_icon:bef
 
 .mx_SpacePanel .mx_SpaceButton .mx_SpaceButton_selectionWrapper {
     border-radius: 0px;
-	padding: 0px;
 }
 
 .mx_SpacePanel .mx_SpaceButton.mx_SpaceButton_new .mx_SpaceButton_icon:before {
     background-color: #0fe;
 }
+
+.mx_MessageComposer_sendMessage:before {
+    background-color: #0fe;
+}
+
+
+
