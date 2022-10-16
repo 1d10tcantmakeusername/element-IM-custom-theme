@@ -1,6 +1,6 @@
 body {
     background-color: #009f95 !important;
-    color: #0fe;
+    color: #00fffe;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -408,5 +408,21 @@ mx_SpacePanel .mx_SpaceButton.mx_SpaceButton_favourites .mx_SpaceButton_icon:bef
     background-color: #0fe;
 }
 
+.mx_LegacyCallEvent_wrapper .mx_LegacyCallEvent {
+    padding: 8px 8px;
+    background-color: #002f2c;
+    border-radius: 0px;
+}
 
+.mx_LegacyCallEvent_wrapper .mx_LegacyCallEvent .mx_LegacyCallEvent_content {
+    color: #00cdc9;
+}
+
+.mx_LegacyCallEvent_wrapper .mx_LegacyCallEvent .mx_LegacyCallEvent_info .mx_LegacyCallEvent_info_basic .mx_LegacyCallEvent_type {
+    color: #00fffe;
+}
+
+.mx_LegacyCallEvent_wrapper .mx_LegacyCallEvent .mx_LegacyCallEvent_info .mx_LegacyCallEvent_info_basic .mx_LegacyCallEvent_type .mx_LegacyCallEvent_type_icon:before {
+    background-color: #00fffe;
+}
 
