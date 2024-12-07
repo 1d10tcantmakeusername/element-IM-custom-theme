@@ -8,12 +8,12 @@ body {
     background-color: #00756d;
 }
 
-.mx_RoomHeader {
+.mx_LegacyRoomHeader {
     background-color: #002a27;
 	border-radius: 0px;
 }
 
-.mx_RoomHeader_buttons {
+.mx_LegacyRoomHeader_buttons {
     background-color: #002a27;
 }
 
@@ -26,7 +26,7 @@ body {
     background: #00847b;
 }
 
-.mx_RoomHeader_button:before {
+.mx_LegacyRoomHeader_button:before {
     background-color: #009188;
 	border-radius: 0%;
 }
@@ -124,7 +124,7 @@ body {
 }
 
 
-.mx_RoomHeader_name {
+.mx_LegacyRoomHeader_name {
     color: #0fe;
     border-radius: 0px;
 }
@@ -177,7 +177,7 @@ hr.mx_RoomView_myReadMarker {
 }
 
 .mx_EventTile_content .markdown-body code, .mx_EventTile_content .markdown-body pre {
-    font-family: unifont!important;
+    font-family: monospace!important;
     background-color: #003531;
 	border-radius: 0;
 }
@@ -277,15 +277,15 @@ a:hover, a:link, a:visited {
     background-color: #0fe;
 }
 
-.mx_RoomHeader_button {
+.mx_LegacyRoomHeader_button {
     border-radius: 0%;
 }
 
-.mx_RoomHeader_button:hover {
+.mx_LegacyRoomHeader_button:hover {
     background: #000f0e4f;
 }
 
-.mx_RoomHeader_button:hover:before {
+.mx_LegacyRoomHeader_button:hover:before {
     background-color: #0fe;
 }
 
@@ -426,3 +426,136 @@ mx_SpacePanel .mx_SpaceButton.mx_SpaceButton_favourites .mx_SpaceButton_icon:bef
     background-color: #00fffe;
 }
 
+.mx_RoomHeader_topic {
+    color: #00fffe;
+}
+
+.mx_ContextualMenu {
+    border-radius: 0px;
+    -webkit-box-shadow: 4px 4px 12px 0 #00312d;
+    box-shadow: 4px 4px 12px 0 #00ffeb;
+    background-color: #000c0b;
+    color: #00fffe;
+}
+
+.mx_IconizedContextMenu .mx_IconizedContextMenu_optionList .mx_IconizedContextMenu_item {
+
+    color: #00fffe;
+}
+
+.mx_IconizedContextMenu .mx_IconizedContextMenu_icon:before {
+    background-color: #00fffe;
+}
+
+.mx_IconizedContextMenu .mx_IconizedContextMenu_sublabel {
+    margin-left: 20px;
+    color: #007e75;
+}
+
+.mx_IconizedContextMenu .mx_IconizedContextMenu_active.mx_IconizedContextMenu_item, .mx_IconizedContextMenu .mx_IconizedContextMenu_active .mx_IconizedContextMenu_item {
+    color: #248981!important;
+}
+
+.mx_IconizedContextMenu .mx_IconizedContextMenu_active .mx_IconizedContextMenu_icon:before {
+    background-color: #248981;
+}
+
+.mx_IconizedContextMenu .mx_IconizedContextMenu_option_red {
+    color: #e63200!important;
+}
+
+.mx_IconizedContextMenu .mx_IconizedContextMenu_option_red .mx_IconizedContextMenu_icon:before {
+    background-color: #e63200;
+}
+
+.mx_LegacyRoomHeader_name[aria-expanded=true] {
+    background-color: #004545;
+}
+
+.mx_LegacyRoomHeader_name:not(.mx_LegacyRoomHeader_name--textonly):hover {
+    background-color: #001715;
+}
+
+.mx_LegacyRoomHeader_name .mx_LegacyRoomHeader_chevron {
+    background-color: #00fffe;
+}
+
+.mx_ReplyPreview .mx_ReplyPreview_section .mx_ReplyPreview_header {
+    color: #0fe;
+}
+
+.mx_ReplyPreview .mx_ReplyPreview_section .mx_ReplyPreview_header .mx_ReplyPreview_header_cancel {
+    background-color: #e63200;
+}
+
+.mx_MessageActionBar .mx_MessageActionBar_iconButton {
+    color: #0fe;
+}
+
+.mx_RoomSearch .mx_RoomSearch_icon {
+    background-color: #00fffe;
+}
+
+.mx_RoomSearch:hover {
+    background-color: #0fe;
+}
+
+.mx_LeftPanel .mx_LeftPanel_roomListContainer .mx_LeftPanel_filterContainer {
+    border-bottom: 1px solid #00fffe;
+}
+
+.mx_RoomSearch {
+    border-radius: 0px;
+    background-color: #007c7a99;
+    border: 1px solid transparent;
+}
+
+.mx_LeftPanel .mx_LeftPanel_roomListContainer .mx_LeftPanel_filterContainer .mx_LeftPanel_exploreButton, .mx_LeftPanel .mx_LeftPanel_roomListContainer .mx_LeftPanel_filterContainer .mx_LeftPanel_recentsButton {
+    border-radius: 0px;
+    background-color: #007c7a99;
+}
+
+.mx_LeftPanel .mx_LeftPanel_roomListContainer .mx_LeftPanel_filterContainer .mx_LeftPanel_exploreButton:before, .mx_LeftPanel .mx_LeftPanel_roomListContainer .mx_LeftPanel_filterContainer .mx_LeftPanel_recentsButton:before {
+    background-color: #00fffe;
+}
+
+.mx_LeftPanel .mx_LeftPanel_roomListContainer .mx_LeftPanel_filterContainer .mx_LeftPanel_exploreButton:hover, .mx_LeftPanel .mx_LeftPanel_roomListContainer .mx_LeftPanel_filterContainer .mx_LeftPanel_recentsButton:hover {
+    background-color: #00fffe;
+}
+
+.mx_EventTile_content .markdown-body code:not(pre *) {
+    background-color: #00686117;
+    border: 1px solid #00fffe2b;
+    border-radius: 0px;
+    line-height: 2.2rem;
+    margin-right: 2px;
+    padding: 2px 0;
+}
+
+.mx_EventTile_spoiler .mx_EventTile_spoiler_content {
+    filter: blur(5px) saturate(1) sepia(0);
+    transition-duration: .25s;
+    color: #00fffe;
+}
+
+.mx_RoomHeader {
+    background-color: #000e0d;
+    border-bottom: 1px solid #00fffe;
+    color: #00fffe;
+}
+
+.mx_RoomHeader:hover {
+    background-color: #003330;
+}
+
+
+._icon-button_bh2qc_17 {
+    background: #002422
+}
+
+._icon-button_bh2qc_17:not([aria-disabled=true]):hover {
+        background: #003631;
+    }
+._indicator-icon_133tf_26 {
+    color: #00fffe;
+}
